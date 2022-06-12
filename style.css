@@ -7,14 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
+html, body{
     height: 100%;
 }
 
 body{
     display: grid;
-    grid-template-columns: repeat(10,auto);
-    grid-template-rows: repeat(10,auto);
+    grid-template-columns:1fr 5fr;
+    grid-template-rows: auto auto 1fr;  
     background-color: var(--BgColor);
 }
 
@@ -22,6 +22,8 @@ body{
     --BgColor: #181818;
     --nAColor: #2020207f;
 }
+
+
 
 nav{
     background-color: var(--nAColor);
