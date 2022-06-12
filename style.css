@@ -1,0 +1,122 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+html, body {
+  background-color: #4C1B49;
+  margin: 10px;
+  height: 100%;
+}
+
+body{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+
+/* .container{
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    grid-gap: 5px;
+} */
+
+/* .container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: "h h h h h h h h h h h h"
+                "m c c c c c c c c c c c"
+                "f f f f f f f f f f f f";
+} */
+
+.gridAssigment {
+    width: 700px;
+    height: 400px;
+    display: grid;
+    grid-gap: 20px;
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-rows: 40px auto 40px; */
+    grid-template-areas: "a a b b b"
+                         "a a c c d"
+                         "e e c c f";
+} 
+
+.header {
+    /* grid-column: 1 / -1; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-area: h;     */
+}
+
+.menu {
+    grid-area: m;
+    /* grid-row: 1/-1;
+    grid-column: -1; */
+}
+
+.content {
+    /* grid-area: c; */
+    /* grid-column: 2/-1; */
+}
+
+.footer {
+    /* grid-column: 1/-1; */
+    /* grid-area: f; */
+}
+
+.a{
+    grid-area: a;
+    background-color: #329888;
+}
+
+.b{
+    grid-area: b;
+    background-color: #4CABC1;
+}
+.c{
+    grid-area: c;
+    background-color: #AB5953;
+}
+
+.sections{
+    border-radius: 15px;
+}
+
+.d{
+    grid-area: d;
+    background-color: #335B66;
+}
+
+.e{
+    grid-area: e;
+    background-color: #C05DA0;
+}
+.f{
+    grid-area: f;
+    background-color: #6F6462;
+}
+
+
