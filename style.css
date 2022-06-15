@@ -24,9 +24,14 @@ body{
 }
 
 main{
-
+width: 85%;
 margin-left: 15%;
 margin-top: 110px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-template-rows: repeat(2,300px);
+padding: 20px;
+ grid-gap: 16px;
 }
 
 nav{
@@ -186,9 +191,54 @@ aside{
 
 
 
-main .vidcard{
-    
+main .vidcard .thumbnail img{
+    background-color: #fff;
+    width: 100%;
 }
+
+main .vidcard{
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Details.main{
+    
+    display: flex;
+    gap: 8px;
+    padding: 0 10px;
+    /* position: relative; */
+}
+
+.Details.main figure img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.Details.main .title{
+        /* white-space: nowrap;  */
+        width: 100%; 
+        height: auto;
+        /* overflow: hidden; */
+        text-overflow: ellipsis; 
+      
+}
+.Details.sub{
+    padding: 0 55px;
+    font-size: 12px;
+    color: gray;
+    font-weight:500;
+}
+
+.Details.sub .channel:hover{
+    font-size: 12px;
+    color: rgb(212, 212, 212);
+    font-weight:700;
+}
+
 
 
 
