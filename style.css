@@ -14,30 +14,29 @@ html, body{
 }
 
 body{
-    display: grid;
-    grid-template-columns:1fr 5fr;
-    grid-template-rows: auto auto 1fr;  
     background-color: var(--BgColor);
-    /* position: relative; */
+    position: relative;
 }
 
 :root{
     --BgColor: #181818;
-    --nAColor: #2020207f;
+    --nAColor: #202020;
 }
 
+main{
 
+margin-left: 15%;
+margin-top: 110px;
+}
 
 nav{
     background-color: var(--nAColor);
-    grid-column: 1/-1;
     display: flex;
     padding: 8px 16px;
     justify-content: space-between;
     width: 100%;
-    /* position: fixed; */
-    /* top: 0; */
-    /* z-index: 10; */
+    position: fixed;
+    top: 0;
 }
 .categories{
     background-color: var(--nAColor);
@@ -48,15 +47,22 @@ nav{
     gap: 12px;
     padding: 8px;
     overflow: scroll;
-    /* position: fixed; */
-    /* width: ; */
-/* top: 50; */
-/* z-index: 10; */
+    position: fixed;
+    width:85% ;
+top: 67px;
+right: 0px;
 }
 
 aside{
     background-color: var(--nAColor);
-    grid-row: 2/-1;
+    position: fixed;
+    width:15% ;
+    top: 67px;
+    left: 0px;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .Home-Hambuger{
@@ -179,6 +185,10 @@ aside{
 }
 
 
+
+main .vidcard{
+    
+}
 
 
 
