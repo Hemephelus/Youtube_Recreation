@@ -182,9 +182,10 @@ aside{
 
 }
 
-/* .option{
+.option{
+    cursor: pointer;
+}
 
-} */
 
 .microphone{
     background-color: #121212;
@@ -325,5 +326,6 @@ main .vidcard{
     padding: 16px;
     font-weight: 500;
     color: #F9F6F9;
+    cursor: pointer;
 }
 
