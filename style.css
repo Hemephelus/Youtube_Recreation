@@ -42,8 +42,10 @@ nav{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .categories{
+    z-index: 1;
     background-color: var(--nAColor);
     grid-column: 2/-1;
     border-bottom: 1px solid #373737;
@@ -189,6 +191,20 @@ aside{
     position: relative;
 }
 
+main .vidcard .thumbnail::after{
+  position: absolute;
+  content: '3:13';
+  background-color: #00000098;
+  bottom: 8px;
+  right: 4px;
+  padding: 4px 4px;
+  font-size: 14px;
+
+}
+
+main .vidcard .thumbnail{
+    position: relative;
+}
 
 
 main .vidcard .thumbnail img{
@@ -202,6 +218,7 @@ main .vidcard{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    cursor: pointer;
 }
 
 .Details.main{
@@ -238,6 +255,28 @@ main .vidcard{
     color: rgb(212, 212, 212);
     font-weight:700;
 }
+
+.stats{
+    display: flex;
+    gap: 10px;
+}
+
+.date::before{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    border-radius: 50%;
+}
+
+.date{
+    position: relative;
+}
+
+
 
 
 
