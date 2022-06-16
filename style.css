@@ -70,7 +70,7 @@ aside{
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    /* gap: 24px; */
     padding: 10px 0;
     overflow: scroll;
 }
@@ -85,9 +85,24 @@ aside{
     /* box-shadow: inset 0 0 5px grey;  */
     border-radius: 10px;
   }
+
+  .sidebar:hover{
+    background-color: #383838;
+  }
+
+  hr{
+    margin: 10px 0;
+    border:none;
+  border-top: 1px solid #80808088;
+  }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+  }
+
+   /* Handle */
+   ::-webkit-scrollbar:hover {
     background: #313131; 
     border-radius: 20px;
   }
@@ -307,5 +322,8 @@ main .vidcard{
     background-color:transparent ;
     border: none;
     font-size: 16px;
+    padding: 16px;
+    font-weight: 500;
+    color: #F9F6F9;
 }
 
